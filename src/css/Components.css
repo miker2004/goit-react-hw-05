@@ -1,0 +1,129 @@
+.navigation-look {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid;
+    border-bottom: solid;
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+
+.nav-style {
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.nav-style:hover {
+    color: orange;
+}
+
+.error-link-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.movie-page-form {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0 ;
+}
+
+.movie-page-input{
+    border-radius: 8px;
+    border: solid 1px whitesmoke;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.movie-page-input:focus {
+    border: solid 1px orange;
+}
+
+.movie-page-button {
+        border-radius: 8px;
+        border: 1px solid whitesmoke;
+        padding: 0.6em 1.2em;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: #1a1a1a;
+        cursor: pointer;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+}
+
+.movie-page-button:hover {
+    background-color: orange;
+}
+
+.list-of-movies {
+    border: solid 1px orange;
+    border-radius: 20px;
+    padding: 0 10px;
+    text-wrap: nowrap;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.list-of-movies:hover {
+    border: solid 4px whitesmoke;
+    background-color: orange;
+}
+
+.movie-detali-style {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.movie-details-p-container {
+    display: flex;
+    flex-direction: column;
+    text-wrap: pretty;
+    margin: 0 20px;
+    border: solid 3px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.cast-rev-style {
+    font-size: 26px;
+    background-color: orange;
+    padding: 0 10px;
+    border: solid 1px whitesmoke;
+    border-radius: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.cast-rev-style:hover {
+    border: solid 1px orange;
+    color: orange;
+    background-color: whitesmoke;
+}
+
+.back-link-div {
+    margin-top: 25px;
+}
+
+.back-link {
+    font-size: 19px;
+    background-color: orange;
+    padding: 0 10px;
+    border: solid 1px whitesmoke;
+    border-radius: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.back-link:hover {
+    border: solid 1px orange;
+    color: orange;
+    background-color: whitesmoke;
+}
