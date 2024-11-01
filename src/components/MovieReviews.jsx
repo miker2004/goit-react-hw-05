@@ -30,13 +30,12 @@ const MovieReviews = () => {
 
   return (
     <div>
-      <h2>Reviews</h2>
       {reviews.length === 0 ? <p>No reviews available.</p> : (
         <ul>
           {reviews.map(review => (
             <li key={review.id}>
-              <h3>{review.author}</h3>
-              <p>{review.content}</p>
+              <h3 className='review-author'>🕵 {review.author} 🕵</h3>
+              <p className='comment-text'>{review.content}</p>
             </li>
           ))}
         </ul>

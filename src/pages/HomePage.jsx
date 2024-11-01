@@ -27,7 +27,7 @@ const HomePage = () => {
 
   return (
     <div>
-          <h1>Trending Movies</h1>
+          <h1 className='main-text-on-mane-page' >See What's Trending</h1>
       {popularMovies.length > 0 && <MovieList movies={popularMovies} />}
     </div>
   );

@@ -34,22 +34,22 @@ const MovieDetailsPage = () => {
   return (
     <div className='back-link-div'>
       <Link to={backLinkLocationRef.current} className="back-link">
-        Back to movies
+      🔙
       </Link>
       {movieDetails && (
         <div>
-          <h1>{movieDetails.title}</h1>
+          <h1 className='movie-title-text'>{movieDetails.title}</h1>
           <div className='movie-detali-style'>
-            <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title} />
+            <img src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`} alt={movieDetails.title}  className='movie-poster-look'/>
             <div className='movie-details-p-container'>
             <p>{movieDetails.overview}</p>
             <p><strong>Rating:</strong> {movieDetails.vote_average}</p> 
             <p><strong>Genres:</strong> {movieDetails.genres.map(genre => genre.name).join(', ')}</p>
             </div>
           </div>
-          <nav className='navigation-look'>
-            <NavLink to="cast" className="nav-link, cast-rev-style">Cast</NavLink>
-            <NavLink to="reviews" className="nav-link, cast-rev-style">Reviews</NavLink>
+          <nav className='rev-cast-positioning'>
+            <NavLink to="cast" className="nav-link, cast-rev-style">Cast🎥</NavLink>
+            <NavLink to="reviews" className="nav-link, cast-rev-style">Reviews💬</NavLink>
           </nav>
           <Outlet />
         </div>

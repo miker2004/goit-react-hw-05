@@ -30,11 +30,10 @@ const MovieCast = () => {
 
   return (
     <div>
-      <h2>Cast</h2>
       {cast.length === 0 ? <p>No cast information available.</p> : (
         <ul>
           {cast.map(actor => (
-            <li key={actor.id}>{actor.name} as {actor.character}</li>
+            <li  className='actor-name-and-char' key={actor.id}>{actor.name} as {actor.character}</li>
           ))}
         </ul>
       )}

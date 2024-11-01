@@ -2,10 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: solid;
-    border-bottom: solid;
+    border-bottom: solid 1px;
     padding: 20px 20px;
-    border-radius: 12px;
 }
 
 .nav-style {
@@ -15,7 +13,7 @@
 }
 
 .nav-style:hover {
-    color: orange;
+    color: #add8e6;
 }
 
 .error-link-page {
@@ -25,10 +23,18 @@
     font-size: 45px;
 }
 
+.serach-main-text{
+    text-align: center;
+    font-size: 50px;
+
+}
+
 .movie-page-form {
     display: flex;
+    justify-content: center;
     gap: 15px;
-    margin: 30px 0 ;
+    margin: 30px 0;
+    padding:0 20px ;
 }
 
 .movie-page-input{
@@ -38,10 +44,13 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
 }
 
 .movie-page-input:focus {
-    border: solid 1px orange;
+    border: solid 3px #add8e6;
 }
 
 .movie-page-button {
@@ -55,31 +64,50 @@
         cursor: pointer;
         -webkit-transition: 0.5s;
         transition: 0.5s;
+        width: 10%;
+        font-size: 17px;
 }
 
 .movie-page-button:hover {
-    background-color: orange;
+    background-color: #add8e6;
+}
+
+.main-text-on-mane-page {
+    text-align: center;
 }
 
 .list-of-movies {
-    border: solid 1px orange;
-    border-radius: 20px;
-    padding: 0 10px;
+    padding: 10px 0;
     text-wrap: nowrap;
-    text-align: center;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     font-size: 20px;
+    border-top: solid;
+}
+
+.ul-list-movie {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
 }
 
 .list-of-movies:hover {
-    border: solid 4px whitesmoke;
-    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    background-color: #add8e6;
 }
 
 .movie-detali-style {
     display: flex;
     margin-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.movie-poster-look {
+    border-radius: 10px;
 }
 
 .movie-details-p-container {
@@ -87,24 +115,29 @@
     flex-direction: column;
     text-wrap: pretty;
     margin: 0 20px;
-    border: solid 3px;
-    border-radius: 10px;
+    font-size: 20px;
     padding: 0 20px;
+}
+
+.rev-cast-positioning {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px;
+    padding: 20px 20px;
 }
 
 .cast-rev-style {
     font-size: 26px;
-    background-color: orange;
-    padding: 0 10px;
-    border: solid 1px whitesmoke;
+    padding: 10px;
     border-radius: 15px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .cast-rev-style:hover {
-    border: solid 1px orange;
-    color: orange;
+    border: solid 1px #add8e6;
+    color: #add8e6;
     background-color: whitesmoke;
 }
 
@@ -113,17 +146,37 @@
 }
 
 .back-link {
-    font-size: 19px;
-    background-color: orange;
-    padding: 0 10px;
-    border: solid 1px whitesmoke;
-    border-radius: 15px;
+    font-size: 40px;
+    padding: 6px;
+    border-radius: 360px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .back-link:hover {
-    border: solid 1px orange;
-    color: orange;
-    background-color: whitesmoke;
+    background-color:  #fff;
+}
+
+
+.movie-title-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.review-author {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.comment-text{
+    font-size: 17px;
+    text-wrap: pretty;
+    text-align: center;
+}
+
+.actor-name-and-char {
+    text-align: center;
+    font-size: 17px;
 }

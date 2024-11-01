@@ -45,6 +45,7 @@ const MoviePage = () => {
 
   return (
     <>
+      <h2 className='serach-main-text'> Search For Movie🔍</h2>
       <form onSubmit={handleSearch} className="movie-page-form">
         <input
           className="movie-page-input"
