@@ -8,12 +8,12 @@ const Navigation = () => {
             <NavLink 
             className="nav-style"
             to="/">
-                Home
+                Home🏠
             </NavLink>
             <NavLink 
             className="nav-style"
             to="/movies">
-                Movies
+                Movies📺
             </NavLink>
         </nav>
     </div>
